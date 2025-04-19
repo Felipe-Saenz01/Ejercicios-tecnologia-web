@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase - 09 - 04</title>
+</head>
+<body>
+    <h1>Clase 9 de Abril</h1>
+    <form action="./datos.php" method="POST">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Nota1</th>
+                    <th>Nota2</th>
+                    <th>Nota3</th>
+                    <th>Final</th>
+                </tr>
+            </thead>
+            <!-- <tbody>
+                <tr>
+                    <td><label for="nombre1">Pepito</label></td>
+                    <td><input type="number" name="nota1[]" id="nota1_p1" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota2[]" id="nota2_p1" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota3[]" id="nota3_p1" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="final[]" id="final_p1" max="5" min="0" step="0.1"></td>
+                </tr>
+                <tr>
+                    <td><label for="nombre2">Juanito</label></td>
+                    <td><input type="number" name="nota1[]" id="nota1_p2" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota2[]" id="nota2_p2" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota3[]" id="nota3_p2" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="final[]" id="final_p2" max="5" min="0" step="0.1"></td>
+                </tr> -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><label for="nombre1">Pepito</label></td>
+                    <td><input type="number" name="nota1[]" class="nota" estudiante="1" num-nota="1" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota2[]" class="nota" estudiante="1" num-nota="2" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota3[]" class="nota" estudiante="1" num-nota="3" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="final[]" class="final" estudiante="1" max="5" min="0" step="0.1" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="nombre2">Juanito</label></td>
+                    <td><input type="number" name="nota1[]" class="nota" estudiante="2" num-nota="1" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota2[]" class="nota" estudiante="2" num-nota="2" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="nota3[]" class="nota" estudiante="2" num-nota="3" max="5" min="0" step="0.1"></td>
+                    <td><input type="number" name="final[]" class="final" estudiante="2" max="5" min="0" step="0.1" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./datos.js"></script>
+</body>
+</html>
